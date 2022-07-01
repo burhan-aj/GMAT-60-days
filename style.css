@@ -84,8 +84,6 @@
 .clabs-logo{
     width: 220px;
     height: 65px;
-    /* padding-left: 2rem;
-    margin-left: 5rem; */
 }
 .banner-content{
     display: flex;
@@ -93,10 +91,8 @@
     flex-wrap: wrap;
     align-items: center;
     margin-top: -2rem;
-    /* justify-content: flex-start; */
 }
 .col-1{
-    /* padding: 2rem; */
     align-items: flex-start;
 }
 .heading{
@@ -369,14 +365,12 @@
 .certified-main{
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
 }
 .coll1{
     display: block;
     padding: 2rem;
-    /* text-align: center; */
     align-items: center;
     justify-content: center;
 }
