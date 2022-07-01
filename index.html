@@ -12,30 +12,29 @@
 </head>
 <body>
     <script>
-        window.addEventListener("load", function(){
-            setTimeout(
-                function open(event){
-                document.querySelector(".open-popup").style.display = "block";
-                },
-                1000
-            )
-        });
+        function openPopUp(){
+            document.querySelector(".full-open-popup").style.display = "block";
+            document.querySelector(".open-popup").style.display = "block";
+        }
         function closePopup(){
-            document.querySelector(".open-popup").style.display = "none";
+            document.querySelector(".full-open-popup").style.display = "none";
+            document.querySelector(".open-popup").style.display = "block";
         }
     </script>
-    <div class="open-popup" id="popup">
-        <button class="close" onclick="closePopup()">&times;</button>
-        <div class="form-section popup-form">
-            <h1 popup-heading>Just a Popup</h1>
-            <form action="" class="form">
-            <div class="popup-input-section">
-                <input type="text" placeholder="Name" name="" id="" class="popup-input-box" />
-                <input type="email" placeholder="Email" name="" id="" class="popup-input-box" />
-                <input type="tel" placeholder="Phone" name="" id="" class="popup-input-box" />
+    <div class="full-width full-open-popup">
+        <div class="open-popup" id="popup">
+            <button class="close" onclick="closePopup()">&times;</button>
+            <div class="form-section popup-form">
+                <h2 class="popup-heading">Just a Popup</h2>
+                <form action="" class="form">
+                <div class="popup-input-section">
+                    <input type="text" placeholder="Name" name="" id="" class="popup-input-box" />
+                    <input type="email" placeholder="Email" name="" id="" class="popup-input-box" />
+                    <input type="tel" placeholder="Phone" name="" id="" class="popup-input-box" />
+                </div>
+                <input type="submit" value="Start your Prep now" class="popup-submit-btn " />
+                </form>
             </div>
-            <input type="submit" value="Start your Prep now" class="popup-submit-btn submit-btn" />
-            </form>
         </div>
     </div>
     <div class="banner">
@@ -127,7 +126,7 @@
             <img src="./assets/profile-hero.png" alt="" class="profile-hero-img">
         </div>
     </div>
-    <div class="plt">
+    <div class="plt" id="scroll-open-popup" onmousewheel="openPopUp()">
         <div class="plt-head">
             <h1 class="profile-plt-heading">Build an outstanding profile with</h1>
             <h1 class="profile-plt-subheading">India’s 1st EVER Profile Building Platform for MBA/MiM</h1>
