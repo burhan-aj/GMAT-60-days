@@ -103,12 +103,13 @@
     width: 750px;
 }
 .col-2{
+    align-items: center;
     text-align: center;
     width: max-content;
 }
 .santosh-img{
     width: 400px;
-    padding-bottom: 0;
+    margin-bottom: -2.5rem;
 }
 .san-text{
     color: #FF9D00;
