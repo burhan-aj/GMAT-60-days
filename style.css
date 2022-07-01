@@ -78,24 +78,25 @@
 }
 .banner{
     background-color: #0E155E;
-    padding: 1rem;
+    padding: 1rem 8rem 4rem 8rem;
     color: #f5f5f5;
 }
 .clabs-logo{
     width: 220px;
-    height: 60px;
-    padding-left: 2rem;
-    margin-left: 5rem;
+    height: 65px;
+    /* padding-left: 2rem;
+    margin-left: 5rem; */
 }
 .banner-content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    margin-top: -2rem;
+    /* justify-content: flex-start; */
 }
 .col-1{
-    padding: 2rem;
+    /* padding: 2rem; */
     align-items: flex-start;
 }
 .heading{
@@ -506,10 +507,12 @@
     padding: 1rem 0;
 }
 @media (max-width: 600px) {
+    .banner{
+        padding: 1rem;
+    }
     .clabs-logo{
         width: 50%;
         height: 50%;
-        margin: 0;
     }
     .banner-content{
         flex-direction: column;
@@ -528,6 +531,7 @@
         text-align: left;
         font-weight: 600;
         line-height: 2em;
+        padding: 2rem 0;
     }
     .download{
         text-align: center;
@@ -717,7 +721,11 @@
 
 @media (max-width: 900px){
     .banner{
+        padding: 2rem;
         width: 100vw;
+    }
+    .heading{
+        padding: 3rem 0;
     }
     .banner-content{
         flex-direction: column;
